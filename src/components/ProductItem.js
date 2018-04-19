@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+import '../css/button.css'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div style={{ marginBottom: 20 }}>
@@ -9,6 +10,7 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
       price={product.price}
       inventory={product.inventory} />
     <button
+      className='buttontest'
       onClick={onAddToCartClicked}
       disabled={product.inventory > 0 ? '' : 'disabled'}>
       {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
