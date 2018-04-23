@@ -1,31 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import '../css/button.css'
 
 const Product = ({ price, inventory, title }) => (
   <div>
-    {title} - &#36;{price}{inventory ? ` x ${inventory}` : null}
-    <div className="col s12 m7">
-    <div className="card horizontal">
-      <div className="card-image">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1200px-Donald_Trump_official_portrait.jpg"
-        height={'300px'}
-        width={'300px'}
-        alt=""
-        />
-      </div>
-      <div className="card-stacked">
-        <div className="card-content">
+        <div>
         <h2 className="header">{title}</h2>
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        <span className="price-text">&#36;{price}</span>
+        <span>&#36;{price}</span>
+        <p>{inventory} remaining</p>
         </div>
-        <div className="card-action">
-        {title} - &#36;{price}{inventory ? ` x ${inventory}` : null}
+        {/* <div className="card-action">
+        &#36;{price}{inventory ? ` x ${inventory}` : null}
+        </div> */}
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
 )
 
 Product.propTypes = {
