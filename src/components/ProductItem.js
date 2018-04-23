@@ -4,6 +4,7 @@ import Product from './Product'
 import '../css/button.css'
 import '../css/product.css'
 
+
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div style={{ marginBottom: 20 }}>
       <div className="col s12 m7">

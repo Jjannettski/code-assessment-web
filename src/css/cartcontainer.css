@@ -1,6 +1,9 @@
-.cartcontainer{
+#emptycart{
     text-align: center;
 }
+/* .card-content{
+    text-align: left;
+} */
 .price-text{
     float:right;
     font-size: 42px;

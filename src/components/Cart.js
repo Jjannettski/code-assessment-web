@@ -57,7 +57,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
     <div>
         <div className="col s12 m7">
             {/* <h2 className="header">Your Cart</h2> */}
-            <div id="emptycart" className="cartcontainer">
+            <div>
             <div>
     <i className="large material-icons">add_shopping_cart</i>
     <h6>Please add some products to cart.</h6>
@@ -68,7 +68,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   )
 
   return (
-    <div className="cartcontainer">
+    <div className="cartcontainer" id="emptycart">
     <div className="col s12 m7">
     <div className="card">
       <div className="card-stacked">
