@@ -1,14 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import '../css/button.css'
+import '../css/product.css'
 
 const Product = ({ price, inventory, title }) => (
   <div>
         <div>
-        <h2 className="header">{title}</h2>
+          <div>
+          <h2 className="hidden-title">{title}</h2>
         <span className="price-text">&#36;{price}</span>
-        <span>&#36;{price}</span>
-        <p>{inventory} remaining</p>
+        </div>
+        <h2 className="shown-title">{title}</h2>
+        <p>{inventory} Remaining</p>
         </div>
         {/* <div className="card-action">
         &#36;{price}{inventory ? ` x ${inventory}` : null}

@@ -1,0 +1,27 @@
+.hidden-title{
+    display:none;
+}
+.hidden-crd{
+    display: none;
+}
+
+
+
+@media only screen 
+  and (max-device-width: 967px) {
+    .hidden-title{
+        display: block;
+    }
+    .shown-title{
+        display:none;
+    }
+    .price-text{
+        float:none;
+    }
+    #shown-crd{
+        display:none;
+    }
+    .hidden-crd{
+        display: block;
+    }
+  }

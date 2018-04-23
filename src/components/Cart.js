@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Product from './Product'
 import '../css/button.css'
 import '../css/cartcontainer.css'
+import '../css/product.css'
 
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
@@ -11,11 +12,30 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
       <div style={{ marginBottom: 20 }}>
       <div className="col s12 m7">
     {/* Write a script to remove the horizontal class from the card below for mobiel devices */}
-    <div className="card horizontal">
+    <div id="shown-crd" className="card horizontal small">
       <div className="card-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1wSOuq0rmJtJPA1TRMdfpQh7Je4GDqR51g04T6eCyauOfHyY"
-        height={'370px'}
-        width={'370px'}
+        <img className="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1wSOuq0rmJtJPA1TRMdfpQh7Je4GDqR51g04T6eCyauOfHyY"
+        // height={'370px'}
+        // width={'370px'}
+        alt=""
+        />
+      </div>
+      <div className="card-stacked">
+        <div className="card-content">
+    <Product
+      title={product.title}
+      price={product.price}
+      inventory={product.inventory}
+      key={product.id}
+      />
+        </div>
+      </div>
+    </div>
+    <div className="card hidden-crd">
+      <div className="card-image">
+        <img className="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1wSOuq0rmJtJPA1TRMdfpQh7Je4GDqR51g04T6eCyauOfHyY"
+        // height={'370px'}
+        // width={'370px'}
         alt=""
         />
       </div>
@@ -50,7 +70,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   return (
     <div className="cartcontainer">
     <div className="col s12 m7">
-    <div className="card horizontal">
+    <div className="card">
       <div className="card-stacked">
         <div className="card-content">
       <h3>Your Cart</h3>
