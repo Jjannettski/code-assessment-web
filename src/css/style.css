@@ -1,6 +1,10 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
+    margin:30px !important;
+    background-color:black;
 }
-.card-image{
-    width:50%;
+h2{
+    font-size: 100px;
 }
+
+/* Maybe make another ccs file elsewhere without writing inline styles */
