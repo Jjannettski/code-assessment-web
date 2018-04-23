@@ -1,6 +1,10 @@
 #emptycart{
     text-align: center;
 }
+.checkout-btn{
+    width: 25%;
+    padding: 1%;
+}
 /* .card-content{
     text-align: left;
 } */
@@ -12,5 +16,9 @@
   and (max-device-width: 967px) {
     .price-text{
         float:none;
+    }
+    .checkout-btn{
+        width: 100%;
+        padding: 2%;
     }
   }
