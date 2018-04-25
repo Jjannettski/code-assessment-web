@@ -4,13 +4,14 @@ import Product from './Product'
 import '../css/button.css'
 import '../css/product.css'
 
+
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div style={{ marginBottom: 20 }}>
       <div className="col s12 m7">
     {/* Write a script to remove the horizontal class from the card below for mobiel devices */}
     <div id="shown-crd" className="card horizontal small">
       <div className="card-image">
-        <img className="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1wSOuq0rmJtJPA1TRMdfpQh7Je4GDqR51g04T6eCyauOfHyY"alt=""/>
+        <img className="responsive-img" src={product.source} alt=""/>
       </div>
       <div className="card-stacked">
         <div className="card-content">
@@ -32,7 +33,7 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
     </div>
     <div className="card hidden-crd">
       <div className="card-image">
-        <img className="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN1wSOuq0rmJtJPA1TRMdfpQh7Je4GDqR51g04T6eCyauOfHyY"alt=""/>
+        <img className="responsive-img" src={product.source} alt=""/>
       </div>
       <div className="card-stacked">
         <div className="card-content">

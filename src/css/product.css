@@ -1,27 +1,20 @@
-.hidden-title{
+.hidden-title, .hidden-crd{
     display:none;
 }
-.hidden-crd{
-    display: none;
+#shown-crd{
+    text-align: left;
 }
-
 
 
 @media only screen 
-  and (max-device-width: 967px) {
-    .hidden-title{
+  and (max-width: 967px) {
+    .hidden-title, .hidden-crd{
         display: block;
     }
-    .shown-title{
+    .shown-title, #shown-crd, .price-text{
         display:none;
     }
-    .price-text{
-        float:none;
-    }
-    #shown-crd{
-        display:none;
-    }
-    .hidden-crd{
-        display: block;
+    .card-content{
+        text-align: center;
     }
   }
