@@ -12,5 +12,6 @@
   and (max-width: 967px) {
     .price-text{
         float:none;
+        display:block;
     }
   }
