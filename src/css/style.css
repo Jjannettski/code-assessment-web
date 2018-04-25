@@ -3,8 +3,10 @@ body {
     margin:80px;
     background-color:#DCDCDC;
 }
+
+
 @media only screen 
-  and (max-device-width: 967px) {
+  and (max-width: 768px) {
     body{
         margin:5px;
     }

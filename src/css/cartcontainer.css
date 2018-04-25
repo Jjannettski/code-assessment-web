@@ -9,7 +9,7 @@
     font-size: 42px;
 }
 @media only screen 
-  and (max-device-width: 967px) {
+  and (max-width: 967px) {
     .price-text{
         float:none;
     }

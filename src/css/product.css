@@ -7,7 +7,7 @@
 
 
 @media only screen 
-  and (max-device-width: 967px) {
+  and (max-width: 967px) {
     .hidden-title, .hidden-crd{
         display: block;
     }
