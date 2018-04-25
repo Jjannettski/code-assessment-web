@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import '../css/button.css'
 import '../css/product.css'
 
-const Product = ({ price, inventory, title }) => (
+const Product = ({ price, inventory, title, source }) => (
   <div>
         <div>
           <div>
@@ -22,7 +22,8 @@ const Product = ({ price, inventory, title }) => (
 Product.propTypes = {
   price: PropTypes.number,
   inventory: PropTypes.number,
-  title: PropTypes.string
+  title: PropTypes.string,
+  source: PropTypes.string
 }
 
 export default Product
