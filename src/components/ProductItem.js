@@ -8,7 +8,6 @@ import '../css/product.css'
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div style={{ marginBottom: 20 }}>
       <div className="col s12 m7">
-    {/* Write a script to remove the horizontal class from the card below for mobiel devices */}
     <div id="shown-crd" className="card horizontal small">
       <div className="card-image">
         <img className="responsive-img" src={product.source} alt=""/>

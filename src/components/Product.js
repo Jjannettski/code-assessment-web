@@ -13,9 +13,6 @@ const Product = ({ price, inventory, title, source }) => (
         <h2 className="shown-title">{title}</h2>
         <p>{inventory} Remaining</p>
         </div>
-        {/* <div className="card-action">
-        &#36;{price}{inventory ? ` x ${inventory}` : null}
-        </div> */}
         </div>
 )
 
