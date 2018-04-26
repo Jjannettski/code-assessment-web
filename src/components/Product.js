@@ -5,15 +5,15 @@ import '../css/product.css'
 
 const Product = ({ price, inventory, title, source }) => (
   <div>
-        <div>
-          <div>
-          <h2 className="hidden-title">{title}</h2>
+    <div>
+      <div>
+        <h2 className="hidden-title">{title}</h2>
         <span className="price-text">&#36;{price}</span>
-        </div>
-        <h2 className="shown-title">{title}</h2>
-        <p>{inventory} Remaining</p>
-        </div>
-        </div>
+      </div>
+      <h2 className="shown-title">{title}</h2>
+      <p>{inventory} Remaining</p>
+    </div>
+  </div>
 )
 
 Product.propTypes = {
